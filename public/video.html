@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video</title>
+	<link rel="stylesheet" href="./video-js.css">
+	<link rel="stylesheet" href="./test.css">
+</head>
+<body>
+	<video id="video__player" class="video-js moo-css vjs-big-play-centered vjs-live" controls preload = "auto" width="640" height="480">
+    <source src="rtmp://live.kwaily.cn/live/room0" type="rtmp/flv">
+    <p class='vjs-no-js'>To View this video .......</p>
+	</video>
+	<script>
+		window.VIDEOJS_NO_BASE_THEME = true
+	</script>
+	<script src="./vtt.js"></script>
+	<script src="./video.js"></script>
+	<script>
+		videojs.options.flash.swf = "./video-js.swf"
+	</script>
+
+	<script>
+		var player = videojs('video__player',{},function() {
+			console.log('ready')
+		})
+	</script>
+</body>
+</html>

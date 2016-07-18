@@ -1,0 +1,14 @@
+.vjs-spark-skin .vjs-big-play-button {
+	width: 80px;
+	height: 80px;
+	border: 5px solid #fff;
+	border-radius: 40px;
+}
+
+.vjs-spark-skin .vjs-big-play-button:before {
+	position: relative;
+}
+
+.vjs-spark-skin .vjs-progress-holder {
+	background-color: purple;
+}
